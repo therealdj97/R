@@ -12,7 +12,7 @@ add <- function(a1,b1){
     print(paste("addition is",c))
 }
 sub <- function(a1,b1){
-    c=a1-b1;-
+    c=a1-b1;
     print(cat("subtraction is",c))
 }
 div <- function(a1,b1){

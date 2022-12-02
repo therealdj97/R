@@ -70,7 +70,7 @@
 # # locating a hidden variable 
 # print(ls(all.name=TRUE))
 
-# # delketing a variable 
+# # deleting a variable 
 # rm(.car)
 # print(.car)
 

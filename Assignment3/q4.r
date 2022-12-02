@@ -5,10 +5,13 @@ library("XML")
 
 library("methods")
 
-
 result<- xmlParse(file = "employee.xml")
+
+
+df<-xmlToDataFrame(result)
 print("xml RESULT")
-print(result)
+print(df)
+
 print("Summery of XML")
 print(summary(result))
 
