@@ -1,0 +1,70 @@
+---
+title: "third-R"
+author: "Divya Das"
+date: "2022-12-03"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Header 1
+## Header 2
+### Header 3
+
+## Program Codes
+```{r}
+summary(mtcars$mpg)
+summary(cars$speed)
+```
+
+## Inline R code
+There were `r nrow(cars)` cars studied
+
+## Lists
+### Un-Ordered list
+* Item 1
+* Item 2
+  + Item 2a
+  + Item 2b
+
+### Ordered List
+1. Item 1
+2. Item 2
+    + Item 2a
+    + Item 2b
+    
+# Adding Text
+This is my third report.
+Class is on PG-DBDA.
+
+# Links
+Hypertext 1
+[linked phrase](https://www.cdac.in/)
+
+## Blockquotes
+
+A friend once said:
+  "Its always better to give
+ than receive".
+ 
+--------------------
+
+
+## Tables
+First Header | Second Header
+----------------------------
+Cell1        |  Cell2
+Cell 3       |   Cell4
+
+## Figures
+![alt-text](thumbnail.jpg)
+
+## Miscellaneous
+superscript^2^
+subscript~2~
+~~strikethrough~~

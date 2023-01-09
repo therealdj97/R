@@ -1,0 +1,7 @@
+var1<-22
+var2<-7
+print(var1&var2)
+print(var1|var2)
+print(!var2)
+print(var1&&var2)
+print(var1||var2)

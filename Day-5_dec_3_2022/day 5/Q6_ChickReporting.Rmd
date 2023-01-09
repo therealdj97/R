@@ -1,0 +1,71 @@
+---
+title: "chick weight report"
+author: "Rajan pillai"
+date: "2022-12-03"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+```{r}
+library(tidyverse)
+summary(ChickWeight)
+`````
+
+```{r}
+library("tidyverse")
+chick0<-ChickWeight[ChickWeight$Chick==34,]
+plot(chick0$weight~chick0$Time)
+legend(0.5,300,legend=c("Plot of chickweight"))
+
+`````
+
+
+
+
+
+##Construct a plot of weight against time for chick number 34.
+
+```{r}
+library("tidyverse")
+chick0<-ChickWeight[ChickWeight$Diet==4,]
+boxplot(chick0$weight~chick0$Time)
+legend(0.5,300,legend=c("Box Plot of chickweight"))
+
+
+`````
+
+
+```{r}
+library("tidyverse")
+chick0<-ChickWeight[ChickWeight$Diet==4,]
+plot(mean(chick0$weight)~mean(chick0$Time))
+
+legend(8.5,180,legend=c("Plot of chickweight(Mean for group = 4th)"))
+
+`````
+
+
+```{r}
+library("tidyverse")
+chick0<-ChickWeight[ChickWeight$Diet==2,]
+plot(mean(chick0$weight)~mean(chick0$Time))
+
+legend(8.5,160,legend=c("Plot of chickweight(Mean for group = 4th)"))
+
+`````
+
+
+```{r}
+library("tidyverse")
+chick0<-ChickWeight[ChickWeight$Diet==6,]
+time<-(chick0$weight~chick0$Time)
+
+X<-c(chick0)
+y<-c(time)
+barplot(y,names.arg = X)
+barplot(y.names.arg=X,col="green")
+#legend(15,300,legend=c("bar Plot of chickweight"))
+
+`````

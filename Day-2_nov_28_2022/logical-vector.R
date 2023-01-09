@@ -1,0 +1,9 @@
+d<-as.integer(5)
+e<-as.integer(6)
+f<-as.integer(7)
+g<-d>e
+h<-e<f
+cat(g,"\t",class(g),"\n")
+cat(h,"\t",class(h),"\n")
+log_vec<-c(d<e,d<f,e<d,e<f,f<d,f<e)
+cat(log_vec,"\t",class(log_vec))

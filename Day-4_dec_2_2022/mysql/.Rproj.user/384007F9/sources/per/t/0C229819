@@ -1,0 +1,26 @@
+{
+    "id": "0C229819",
+    "path": "D:/c-dac-pgdbda/R/Day-4/mysql/mysql.R",
+    "project_path": "mysql.R",
+    "type": "r_source",
+    "hash": "368397294",
+    "contents": "",
+    "dirty": false,
+    "created": 1669960492355.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "4,102",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1669960447,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1669960447,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,6 @@
+library("xlsx")
+e1<-data.frame(id=c(1:5),name=c("A","B","C","D","E"))
+print(e1)
+#write.xlsx(e1,"test_sample2.xlsx")
+e2<-data.frame(id=c(6:10),name=c("AF","BG","CI","DY","EJ"))
+write.xlsx(e2,"test_sample2.xlsx",sheetName="Sheet2",append=TRUE)

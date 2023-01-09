@@ -1,0 +1,1 @@
+"0","plot(diamonds$cut,diamonds$price,col=""blue"",xlab=""Cut"",ylab=""Price"")"

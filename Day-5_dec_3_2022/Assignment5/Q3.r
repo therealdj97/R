@@ -1,0 +1,1 @@
+# 3. Create a tibble student with name, mark1, mark2, mark3. Calculate the total mark and new column using mutate function.

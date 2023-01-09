@@ -1,0 +1,5 @@
+library(tidyverse)
+#print(table5)
+t6<-table5 %>% unite(new,century,year,sep="")
+print(t6)
+#table5 %>% unite(new,century,year,sep="")

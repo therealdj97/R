@@ -1,0 +1,25 @@
+---
+title: "Q5"
+output: pdf_document
+date: "2022-12-20"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Summery of Diamonds datasheet:
+
+```{r}
+library(tidyverse)
+summary(diamonds$price)
+```
+
+## Ploting of cut vs price of diamonds cheatsheet
+
+```{r}
+plot(diamonds$cut,diamonds$price,col="blue",xlab="Cut",ylab="Price")
+```
+
+##Importing Image :Diamonds 
+![alt-text](1.jpg)

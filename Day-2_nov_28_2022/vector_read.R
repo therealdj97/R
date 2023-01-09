@@ -1,0 +1,6 @@
+seq_vec<-seq(1,4,by=0.5)
+print(seq_vec)
+print(class(seq_vec))
+seq_vec1<-seq(1,4,length.out=6)
+print(seq_vec1)
+print(class(seq_vec1))
