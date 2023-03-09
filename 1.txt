@@ -1,0 +1,175 @@
+Mesh does not belong to the base R system. The other utils, graphics, compiler, splines, stats4, grDevices, datasets will contain Base R system. There are many other packages also in R studio which were pre-installed.
+There are more than 4000 packages on CRAN. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 4000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages.
+Explanation: Its functionality is based on consumer demand and user contributions. It is only for the higher level. The capabilities of the R system generally reflect the interests of the R user community. However, now some of those communities have adopted R and we are seeing more code being written for those kinds of applications.
+
+
+a) Key feature of R was that its syntax is very similar to S
+c) R has been reported to be running on modern tablets, phones, PDAs, and game consoles
+d) R functionality is divided into a number of Packages
+
+) One nice feature that R shares with many popular open source projects is frequent releases
+b) R has sophisticated graphics capabilities) One nice feature that R shares with many popular open source projects is frequent releases
+b) R has sophisticated graphics capabilities
+
+ base => utils, stats, datasets, graphics, grDevices, grid, methods, parallel, compiler, splines, tcltk, stats4
+ Recommended packages => boot, class, cluster, codetools, foreign, KernSmooth, lattice, mgcv, nlme, rpart, survival, MASS, nnet, Matrix.
+ 
+There are base packages (which come with R automatically), and contributed packages. The base packages are maintained by a select group of volunteers called R Core. In addition to the base packages, there are over ten thousand additional contributed packages written by individuals all over the world.
+
+For computationally-intensive tasks, C, C++ and Fortran code can be linked and called at run time.
+
+Indexing in R starts from 1
+“:” operator is used to create an integer sequence
+ 
+A vector can only contain objects of the same class. A vector cannot have contain objects of the different class. Same class objects are used mostly. The most basic type of R object is a vector. Empty vectors can be created with the vector() function
+
+A list can contain objects of different class. But a vector can only contain objects of the same class. A vector cannot have contain objects of the different class. Same class objects are used mostly.
+
+NaN is used to define the “undefined” value in the R language. Undefined values also have some value in R. Missing values are denoted by NA or NaN for q undefined mathematical operations. A NaN value is also NA but the converse is not true.
+
+NaN is called Not a Number. It is the full form of NaN. Full forms can be viewed in R studio by typing help. A NaN value is also NA but the converse is not true. The value NaN represents an undefined value
+
+Inf is used to define “Infinity” in R. It is somewhat different from other programming languages. There is also a special number of Inf which represents infinity.
+
+TRUE is taken as 1. Then it will give output as 1 and 2. FALSE can be taken as 0. T and F are short-hand ways to specify TRUE and FALSE.
+
+y<-c(2,”t”) => Here 2 is changed into character. Since the y belongs to list. A list contains only characters. Combining a numeric object with a character object will create a character vector because numbers can usually be easily represented as strings
+
+y<-c(FALSE,2) => Numeric and FALSE is executed as 0. It is somewhat different from other programming languages. Console will give a class as Numeric. A vector can only contain objects of the same class. A list is represented as a vector but can contain objects of different classes.
+
+Data frame is not the basic data type of R. Numeric, character, integer are the basic types of R. The basic data types are used many times. Data frames are used to store tabular data in R. They are an important type of object in R and are used in a variety of statistical modelling applications.
+
+To create an integer L should be added to the integer. L is added to specify that it is an integer. An integer can also be created with many types. If you explicitly want an integer, you need to specify the L suffix.
+ 
+Characters cannot be expressed as numeric. Therefore NA’s are printed as output. NA will specify the missing elements in the list. When nonsensical coercion takes place, you will usually get a warning from R.
+ 
+It is itself an integer vector of length 2. The dimension attribute in R is an integer vector. Real values larger in modulus than the largest integer are coerced to NA. Matrices are vectors with a dimension attribute. The dimension attribute is itself an integer vector of length 2 (number of rows, number of columns).
+ 
+Explanation: If nothing is mentioned, matrix is created column-wise. If we want in row-wise then we have to specify. We have to mention “by row” to create a matrix in row wise. The filter( ) function is used to extract subsets of rows from a data frame. This function is similar to the existing subset( ) function.
+
+rbind() is used to create a matrix by row-binding Row- binding is the basic function of R. R – bind is used to bind the functions in R. Matrices can be created by column-binding or row-binding with the cbind() and rbind() functions.
+ 
+is.na() is the function used to test if they are NA. We can check NA ‘s at any stage of the code. Generally, We will remove the NA’s for the operations in R like mean etc.., is.na() is used to test objects if they are NA
+ 
+is.nan() is used to test if they are NaN. We can check NAN‘s at any stage of the code. We will remove the NA’s for the operations in R. is.nan() is used to test for NaN.
+ 
+colnames() is the function to set column names for a matrix. rownames() is the function to set row names for a matrix. But we can’t use both at a time. Column names and row names can be set separately using the colnames() and rownames() functions
+ 
+Setting up a workstation to take full advantage of the customizable features of R is a straightforward thing
+R has an inbuilt help facility similar to the man facility of UNIX
+Windows versions of R have other optional help systems also
+
+$ R will start the R program
+
+?solve  ==  help(solve)
+
+If an expression is given as a command, it is evaluated, printed (unless specifically made invisible), and the value is lost.
+
+If a command is not complete at the end of a line, R will give a different prompt, by default it is  +
+
+Command lines entered at the console are limited to about 4095 bytes.
+
+EMACS text editor provides more general support mechanisms via ESS for working interactively with R.
+
+Missing data are a persistent and prevalent problem in many statistical analyses, especially those associated with the social sciences. R reserves the special symbol NA to represent missing data. Ordinary arithmetic with NA value gives NA’s (addition, subtraction, etc.) and applying a function to a vector that has a NA in it will usually give a NA.
+
+The R language is a dialect of S which was designed in the 1980s. Since the early 90’s the life of the S language has gone down a rather winding path. The scoping rules for R are the main feature that makes it different from the original S language
+
+he language syntax has a superficial similarity with C, but the semantics are of the FPL (functional programming language) variety with stronger affinities with Lisp and APL. There are many syntaxes in C, which are closely resembled with R.
+
+typeof() tells about the data type. They are an important type of object in R and are used in a variety of statistical modelling applications. You can determine an object’s type with the typeof function.
+
+ R language has 6 atomic data types. They are logical, integer, real, complex, string (or character) and raw. There is also a class for “raw” objects, but they are not commonly used directly in data analysis.
+ 
+ row.names() is the function to set row names for a data frame. Data frames have a special attribute called row.names, which indicate information about each row of the data frame.
+ 
+ Single element of a character vector is often referred to as a character string. Dates are represented by the Date class and can be coerced from a character string using the as.Date() function. This is a common way to end up with a Date object in R.
+ 
+ source is available in the file menu. Today R runs on almost any standard computing platform and operating system. Its open source nature. The copyright for the primary source code for R is held by the R Foundation and is published under the GNU General Public License version
+ 
+ : C, C++ and Fortran can be linked. There are a number of people had used something like C/C++ programming languages to manipulate the R objects.
+ 
+ TIBCO is the current owner of the S language. In 2008, Insightful was acquired by TIBCO for $25 million. As of this writing, TIBCO is the current owner of the S language and is its exclusive developer
+ 
+ Functionality of R is divided into a number of Functions
+ CRAN hosts many add-on packages that can extend the functionality of R. Connections allow R functions to talk to all different external objects without having to write custom code for each object.
+
+Dataframes can be converted into a matrix by calling the following function data matrix()
+
+Calls, expressions and names are the three types of objects that constitute the R language. There is really only one rule about vectors in R, which is that A vector can only contain objects of the same class. R objects can have names, which is very useful for writing readable code and self-describing objects.
+
+To install a package named for, open up R and type install.packages(“for”). To install foo and additionally install all of the other packages on which for depends, instead type install.packages (“for”, depends = TRUE).
+
+Type library() at the command prompt to see a list of all available packages in the library. For total information about the installation of R and add-on packages, see the R Installation and Administration manual.
+
+The longer programs called scripts, there is too much code to write all at once at the command prompt. Furthermore, for longer scripts, it is convenient to be able to only modify a certain piece of the script and run it again in R.
+  
+Scripts will run on Script Editors  
+Script editors are designed to aid the communication and code writing process. They have all sorts of features including R syntax highlighting, automatic code completion, delimiter matching, and dynamic help on the R functions.
+  
+ “Recommended” packages also include boot, class, cluster, codetools, foreign, KernSmooth, lattice, mgcv, nlme, rpart, survival, MASS, nnet, Matrix. There are about ten thousand packages in R now.
+ 
+ R Commander provides a point-and-click interface to statistical problems. It is called the “Commander” because every time one makes a selection, the code corresponding to the task is listed in the output window.
+ 
+ Compared to other programming languages, the R community tends to be more focussed on results instead of processes. Knowledge of software engineering best practice.
+ 
+ You are confronted with over 20 years of evolution every time you use R. Learning R can be hard because there are many special cases in R to remember. R is the best user of memory.
+  
+ Statistics for relatively advanced users. R has thousands of packages, designed, maintained, and widely used by statisticians. We can code ourselves if a command is not present.
+   
+ In order to use the R-related functionality in Dundas BI, we must have access to an existing R server. There are configuration settings in Dundas BI that allow administrators to specify the details for connecting to the external R server.
+
+ The open source Rserve (Binary R Server) software is available for Unix, Linux, and Windows platforms. However, due to limitations with the Windows version, it is not recommended for use outside of evaluation purposes.
+
+We can view or modify configuration settings in Dundas BI through an administration screen, so there’s no need to access the Dundas BI server directly.
+
+The mapply() function can be used to automatically “vectorize” a function. What this means is that it can be used to take a function that typically only takes single arguments and create a new function that can take vector arguments.
+
+ R (www.r-project.org) is a commonly used free Statistics software. R allows you to carry out statistical analyses in an interactive mode, as well as allowing simple programming.
+
+: A scalar variable was a variable which holds one value at a time. It is a single component which assumes a range of number or string values. A scalar value is associated with every point in space.
+
+a) The grammar of the language determines whether an expression is complete or not
+b) The <- symbol is the assignment operator in R
+d) R does not support multi-line comments or comment blocks 
+
+ Print command is used for outputting the value.
+ 
+ 
+ 
+ a) : operator is used to create integer sequences
+b) The numbers in the square are merely part of the printed output.
+c) There is a difference between the actual R object and the manner in which that R object is printed to the console
+d) Files containing R scripts ends with extension .R
+
+sink() restores it to the console once again
+
+sink will divert all subsequent output from the console to an external file.
+
+The entities that R creates and manipulates are known as objects
+These may be variables, arrays of numbers, character strings, functions, or more general structures built from such components
+
+All objects created during an R session can be stored permanently in a file for use in future R sessions. called as workspace
+
+: Factors are used to represent categorical data and can unordered and ordered. One can think of a factor as an integer vector where each integer has a label. Factors are important in statistical modelling and are treated specially by modelling functions like lm() and glm().
+
+
+x <- c(4, 5, 1, 2, 3, 3, 4, 4, 5, 6)
+x <- as.factor(x)
+
+x becomes a factor
+
+d <- date()
+) Prints exact present time and date
+: Dates are represented by the Date class and can be coerced from a character string using the as.Date() function. This is a common way to end in R with a Date. There are other alternatives to print date too.
+
+
+paste("Everybody", "is", “a” , "warrior")
+
+“Everybody is a warrior”
+
+Both paste() and cat() print out text to the console by combining multiple character vectors together, it is impossible for those functions to know in advance how many character vectors will be passed to the function by the user.
+
+
+nchar will print the number of characters as output. It does not print the whole characters, it just prints the number. It does not print first 5 and also last 5 characters of the input string.
+
